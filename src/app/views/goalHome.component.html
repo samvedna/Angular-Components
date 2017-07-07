@@ -1,0 +1,15 @@
+ <input type="button" class="btn btn-primary button" value="Add a Goal" (click)="showGoalComponent()" [hidden]="!hideGoalComponent"> 
+  <div [hidden]="hideGoalComponent" >
+  <add-goal (addClick)="handleAddGoalEvent($event)" [saveAddToggleButton]="hideGoalComponent">    
+  </add-goal>
+  </div>
+
+  <div [hidden]="!hideGoalComponent" *ngFor= "let goal of goalData; let i = index">  
+    <p class="flex-item todo-text" > 
+      <label>{{goal.title}}</label>
+      <span class=" glyphicon glyphicon-option-horizontal show-goal-details"
+       (click)="goalDetails(goal,i)"></span>
+      <span class="glyphicon glyphicon-pencil edit-button"  (click)="editGoals(goal,i)">
+      </span>     
+    </p>
+    </div>

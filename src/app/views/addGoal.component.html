@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row margin-val">
+        <div class="col-sm-3">
+        <label class="labeldesign">Title </label>
+        </div>
+         <div class="col-sm-9">
+        <input class="align-goal-fields" name="title" placeholder="Title" type="text" 
+        [(ngModel)]="title" /> 
+        </div>
+    </div>
+    <div class="row margin-val">
+        <div class="col-sm-3">
+        <label class="labeldesign">Description </label>
+        </div>
+         <div class="col-sm-9">
+       <textarea placeholder="Goal Description" class="align-goal-fields" [(ngModel)]="description">           
+       </textarea>
+         
+        </div>
+    </div>
+    <div class="row">
+     <div>
+         <button class="button" value="add" [hidden]="saveAddToggle || saveAddToggleButton" (click)="addGoal()" >Add</button>
+          <button class="button" value="save" [hidden]="!saveAddToggle" (click)="saveGoal()">Save</button>
+    </div>
+ 
+    </div> 
+    
+ </div>

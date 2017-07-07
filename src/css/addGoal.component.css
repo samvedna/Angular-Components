@@ -1,0 +1,27 @@
+.body{
+     background-color: #337ab7;
+}
+.container{
+    background-color: #337ab7;
+    width:30%;   
+    margin:30px auto;
+    padding: 30px 5px;
+    
+}
+.button{
+    margin: 10px;
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.margin-val{
+    margin:10px 0;
+}
+
+.align-goal-fields{
+    width:75%;
+}
+
+.labeldesign{
+    color:whitesmoke;
+}

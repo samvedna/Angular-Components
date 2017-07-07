@@ -1,0 +1,44 @@
+.button{
+    width:21%
+}
+.container{
+    background-color: lavenderblush;
+     width: 100%;
+   padding: 50px 0;    
+}
+
+.wrapper{
+    max-width: 1400px;    
+}
+
+.flex-container {    
+    display: flex;       
+   padding: 50px 0;
+    }
+
+.flex-item {
+    display: flex;
+    background-color: indianred;
+    width: 250px;
+    height: 70px;
+    margin: 10px;
+}
+.todo-text{
+    padding: 25px 10px;
+    position: relative;
+    left: 38%;
+    margin: 2%;
+    color:whitesmoke;
+}
+
+.edit-button{
+    right: 5%;
+    position: absolute;
+    top: 11%;
+}
+
+.show-goal-details{
+    position: absolute;
+    right: 20%;
+    top: 5%;
+}
